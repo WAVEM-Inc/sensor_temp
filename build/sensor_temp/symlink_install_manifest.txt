@@ -1,0 +1,16 @@
+/home/ubuntu/ros2_ws/src/sensor_temp/install/sensor_temp/lib/sensor_temp/sensor_temp_node
+/home/ubuntu/ros2_ws/src/sensor_temp/install/sensor_temp/share/ament_index/resource_index/package_run_dependencies/sensor_temp
+/home/ubuntu/ros2_ws/src/sensor_temp/install/sensor_temp/share/ament_index/resource_index/parent_prefix_path/sensor_temp
+/home/ubuntu/ros2_ws/src/sensor_temp/install/sensor_temp/share/sensor_temp/environment/ament_prefix_path.sh
+/home/ubuntu/ros2_ws/src/sensor_temp/install/sensor_temp/share/sensor_temp/environment/ament_prefix_path.dsv
+/home/ubuntu/ros2_ws/src/sensor_temp/install/sensor_temp/share/sensor_temp/environment/path.sh
+/home/ubuntu/ros2_ws/src/sensor_temp/install/sensor_temp/share/sensor_temp/environment/path.dsv
+/home/ubuntu/ros2_ws/src/sensor_temp/install/sensor_temp/share/sensor_temp/local_setup.bash
+/home/ubuntu/ros2_ws/src/sensor_temp/install/sensor_temp/share/sensor_temp/local_setup.sh
+/home/ubuntu/ros2_ws/src/sensor_temp/install/sensor_temp/share/sensor_temp/local_setup.zsh
+/home/ubuntu/ros2_ws/src/sensor_temp/install/sensor_temp/share/sensor_temp/local_setup.dsv
+/home/ubuntu/ros2_ws/src/sensor_temp/install/sensor_temp/share/sensor_temp/package.dsv
+/home/ubuntu/ros2_ws/src/sensor_temp/install/sensor_temp/share/ament_index/resource_index/packages/sensor_temp
+/home/ubuntu/ros2_ws/src/sensor_temp/install/sensor_temp/share/sensor_temp/cmake/sensor_tempConfig.cmake
+/home/ubuntu/ros2_ws/src/sensor_temp/install/sensor_temp/share/sensor_temp/cmake/sensor_tempConfig-version.cmake
+/home/ubuntu/ros2_ws/src/sensor_temp/install/sensor_temp/share/sensor_temp/package.xml

@@ -24,45 +24,57 @@ int SensorTemp::pub_temp_hum()
 	TempMSG temp;
 	HumMSG hum;
 	fd=open("/dev/ttyACM0", O_RDWR);
+	if(fd < 0)
+	{
+		printf("file open error\n");
+		return -1;
+	}
 	write(fd, "ATCD\r\n", 6);
 	read(fd,temp_buf,sizeof(temp_buf));
-	temp_pars=strstr(temp_buf,"ATCD");
-	for(lp=0;lp < 32;lp++)
+	try
 	{
-		if(temp_pars == NULL)
+		temp_pars=strstr(temp_buf,"ATCD");
+		for(lp=0;lp < 32;lp++)
 		{
-			printf("no recieve data\n");
-			return -1;
-		}
-		else if(temp_pars[lp+pars_point] == '\n')
-		{
-			break;
-		}
-		else if(temp_pars[lp+pars_point] == ',')
-		{
-			temp_flag++;
-			lp_2=lp+1;
-		}
-		else
-		{
-			if(temp_flag ==0)
+			if(temp_pars == NULL)
 			{
-				temp_val[lp] = temp_pars[lp+pars_point];
+				printf("no recieve data\n");
+				return -1;
+			}
+			else if(temp_pars[lp+pars_point] == '\n')
+			{
+				break;
+			}
+			else if(temp_pars[lp+pars_point] == ',')
+			{
+				temp_flag++;
+				lp_2=lp+1;
 			}
 			else
 			{
-				hum_val[lp-lp_2] = temp_pars[lp+pars_point];
+				if(temp_flag ==0)
+				{
+					temp_val[lp] = temp_pars[lp+pars_point];
+				}
+				else
+				{
+					hum_val[lp-lp_2] = temp_pars[lp+pars_point];
+				}
 			}
 		}
+		temp.header.frame_id = "base_link";
+		hum.header.frame_id = "base_link";
+		temp.header.stamp = current_time_;	
+		hum.header.stamp = current_time_;	
+		temp.temperature=atof(temp_val);
+		hum.relative_humidity=atof(hum_val);
+		pub_temp_->publish(temp);
+		pub_hum_->publish(hum);
 	}
-	temp.header.frame_id = "base_link";
-	hum.header.frame_id = "base_link";
-	temp.header.stamp = current_time_;	
-	hum.header.stamp = current_time_;	
-	temp.temperature=atof(temp_val);
-	hum.relative_humidity=atof(hum_val);
-	pub_temp_->publish(temp);
-	pub_hum_->publish(hum);
+	catch(std::exception&e)
+	{
+		std::cout << e.what() << '\n';
+	}	
 	close(fd);
 	return 0;
 }

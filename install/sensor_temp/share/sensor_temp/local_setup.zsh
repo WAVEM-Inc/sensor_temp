@@ -1,0 +1,1 @@
+/home/nuc-bt/kec_ws/src/sensor/sensor_temp/build/sensor_temp/ament_cmake_environment_hooks/local_setup.zsh

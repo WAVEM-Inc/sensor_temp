@@ -1,6 +1,6 @@
 #include"sensor_temp.hpp"
 
-SensorTemp::SensorTemp():Node("obstacle_detection_node"){
+SensorTemp::SensorTemp():Node("sensor_temp_node"){
 	rclcpp::PublisherOptions pub_temp_options;
 	pub_temp_ = this->create_publisher<TempMSG>("/sensor/temp/temperature", 1,pub_temp_options);
 	rclcpp::PublisherOptions pub_hum_options;
@@ -23,7 +23,7 @@ int SensorTemp::pub_temp_hum()
 	memset(hum_val,0,sizeof(hum_val));
 	TempMSG temp;
 	HumMSG hum;
-	fd=open("/dev/ttyACM0", O_RDWR);
+	fd=open("/dev/ttyTEMP", O_RDWR);
 	if(fd < 0)
 	{
 		printf("file open error\n");

@@ -51,10 +51,6 @@ COLCON_CURRENT_PREFIX="/home/nuc-bt/kec_ws/src/rms/ktp_rms/ktp_interface/install
 _colcon_prefix_chain_sh_source_script "$COLCON_CURRENT_PREFIX/local_setup.sh"
 
 # setting COLCON_CURRENT_PREFIX avoids relying on the build time prefix of the sourced script
-COLCON_CURRENT_PREFIX="/home/nuc-bt/kec_ws/src/rms/ktp_rms/ktp_dummy_data_generator/install"
-_colcon_prefix_chain_sh_source_script "$COLCON_CURRENT_PREFIX/local_setup.sh"
-
-# setting COLCON_CURRENT_PREFIX avoids relying on the build time prefix of the sourced script
 COLCON_CURRENT_PREFIX="/home/nuc-bt/kec_ws/src/drive/obstacle_detection/install"
 _colcon_prefix_chain_sh_source_script "$COLCON_CURRENT_PREFIX/local_setup.sh"
 

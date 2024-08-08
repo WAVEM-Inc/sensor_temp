@@ -27,7 +27,6 @@ _colcon_prefix_chain_powershell_source_script "/home/nuc-bt/kec_ws/src/rms/ktp_r
 _colcon_prefix_chain_powershell_source_script "/home/nuc-bt/kec_ws/src/rms/ktp_rms/ktp_data_manager/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/nuc-bt/kec_ws/src/rms/ktp_rms/ktp_task_controller/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/nuc-bt/kec_ws/src/rms/ktp_rms/ktp_interface/install\local_setup.ps1"
-_colcon_prefix_chain_powershell_source_script "/home/nuc-bt/kec_ws/src/rms/ktp_rms/ktp_dummy_data_generator/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/nuc-bt/kec_ws/src/drive/obstacle_detection/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/nuc-bt/kec_ws/src/drive/route_devation/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/nuc-bt/kec_ws/src/drive/gps_navigation/install\local_setup.ps1"

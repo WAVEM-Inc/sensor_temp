@@ -43,12 +43,5 @@ def generate_launch_description():
             executable='sensor_temp_node',
             output='both')
 
-    return launch.LaunchDescription([sensor_temp_node,
-
-        launch.actions.RegisterEventHandler(
-            event_handler=launch.event_handlers.OnProcessExit(
-                target_action=sensor_temp_node,
-                on_exit=[launch.actions.EmitEvent(
-                    event=launch.events.Shutdown())],
-                )),
+    return launch.LaunchDescription([sensor_temp_node
             ])

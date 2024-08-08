@@ -68,6 +68,7 @@ int SensorTemp::pub_temp_hum()
 		hum.header.stamp = current_time_;	
 		temp.temperature=atof(temp_val);
 		hum.relative_humidity=atof(hum_val);
+		RCLCPP_INFO(this->get_logger(), "TEMP = %lf, HUM = %lf",atof(temp_val),atof(hum_val) );
 		pub_temp_->publish(temp);
 		pub_hum_->publish(hum);
 	}

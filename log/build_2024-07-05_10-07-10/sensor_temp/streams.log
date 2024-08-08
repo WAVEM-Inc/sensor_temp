@@ -1,0 +1,77 @@
+[0.014s] Invoking command in '/home/nuc-bt/kec_ws/src/sensor/sensor_temp/build/sensor_temp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nuc-bt/kec_ws/src/service/sound_player/install/sound_player:/home/nuc-bt/kec_ws/src/service/path_graph_data/install/path_storage:/home/nuc-bt/kec_ws/src/sensor/gps/install/ntrip_client:/home/nuc-bt/kec_ws/src/rms/ktp_rms/ktp_dummy_data_generator/install/ktp_dummy_data_generator:/home/nuc-bt/kec_ws/src/rms/ktp_rms/ktp_interface/install/ktp_interface:/home/nuc-bt/kec_ws/src/rms/ktp_rms/ktp_task_controller/install/ktp_task_controller:/home/nuc-bt/kec_ws/src/rms/ktp_rms/ktp_data_manager/install/ktp_data_manager:/opt/ros/humble /usr/bin/cmake --build /home/nuc-bt/kec_ws/src/sensor/sensor_temp/build/sensor_temp -- -j8 -l8
+[0.131s] [35m[1mConsolidate compiler generated dependencies of target sensor_temp_node[0m
+[0.179s] [ 33%] [32mBuilding CXX object CMakeFiles/sensor_temp_node.dir/src/sensor_temp.cpp.o[0m
+[2.069s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.069s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.069s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.069s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.069s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.069s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.069s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.069s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.070s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.070s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.070s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.070s]                  from [01m[K/home/nuc-bt/kec_ws/src/sensor/sensor_temp/include/sensor_temp/sensor_temp.hpp:7[m[K,
+[2.070s]                  from [01m[K/home/nuc-bt/kec_ws/src/sensor/sensor_temp/src/sensor_temp.cpp:1[m[K:
+[2.070s] [01m[K/home/nuc-bt/kec_ws/src/sensor/sensor_temp/src/sensor_temp.cpp:[m[K In member function ‘[01m[Kint SensorTemp::pub_temp_hum()[m[K’:
+[2.070s] [01m[K/home/nuc-bt/kec_ws/src/sensor/sensor_temp/src/sensor_temp.cpp:71:49:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lf[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 5 has type ‘[01m[Kchar*[m[K’ [[01;35m[K-Wformat=[m[K]
+[2.070s]    71 |                 RCLCPP_INFO(this->get_logger(), [01;35m[K"TEMP = %lf, HUM = %lf"[m[K,[32m[Ktemp_val[m[K,hum_val );
+[2.070s]       |                                                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K [32m[K~~~~~~~~[m[K
+[2.070s]       |                                                                         [32m[K|[m[K
+[2.070s]       |                                                                         [32m[Kchar*[m[K
+[2.070s] [01m[K/home/nuc-bt/kec_ws/src/sensor/sensor_temp/src/sensor_temp.cpp:71:59:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.070s]    71 |                 RCLCPP_INFO(this->get_logger(), "TEMP = [01;36m[K%lf[m[K, HUM = %lf",temp_val,hum_val );
+[2.070s]       |                                                         [01;36m[K~~^[m[K
+[2.070s]       |                                                           [01;36m[K|[m[K
+[2.070s]       |                                                           [01;36m[Kdouble[m[K
+[2.070s]       |                                                         [32m[K%s[m[K
+[2.070s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.070s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.070s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.070s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.070s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.070s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.070s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.070s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.070s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.070s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.070s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.070s]                  from [01m[K/home/nuc-bt/kec_ws/src/sensor/sensor_temp/include/sensor_temp/sensor_temp.hpp:7[m[K,
+[2.070s]                  from [01m[K/home/nuc-bt/kec_ws/src/sensor/sensor_temp/src/sensor_temp.cpp:1[m[K:
+[2.071s] [01m[K/home/nuc-bt/kec_ws/src/sensor/sensor_temp/src/sensor_temp.cpp:71:49:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lf[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 6 has type ‘[01m[Kchar*[m[K’ [[01;35m[K-Wformat=[m[K]
+[2.071s]    71 |                 RCLCPP_INFO(this->get_logger(), [01;35m[K"TEMP = %lf, HUM = %lf"[m[K,temp_val,[32m[Khum_val[m[K );
+[2.071s]       |                                                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K          [32m[K~~~~~~~[m[K
+[2.071s]       |                                                                                  [32m[K|[m[K
+[2.071s]       |                                                                                  [32m[Kchar*[m[K
+[2.071s] [01m[K/home/nuc-bt/kec_ws/src/sensor/sensor_temp/src/sensor_temp.cpp:71:70:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.071s]    71 |                 RCLCPP_INFO(this->get_logger(), "TEMP = %lf, HUM = [01;36m[K%lf[m[K",temp_val,hum_val );
+[2.071s]       |                                                                    [01;36m[K~~^[m[K
+[2.071s]       |                                                                      [01;36m[K|[m[K
+[2.071s]       |                                                                      [01;36m[Kdouble[m[K
+[2.071s]       |                                                                    [32m[K%s[m[K
+[3.711s] [ 66%] [32m[1mLinking CXX executable sensor_temp_node[0m
+[3.873s] [100%] Built target sensor_temp_node
+[3.882s] Invoked command in '/home/nuc-bt/kec_ws/src/sensor/sensor_temp/build/sensor_temp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nuc-bt/kec_ws/src/service/sound_player/install/sound_player:/home/nuc-bt/kec_ws/src/service/path_graph_data/install/path_storage:/home/nuc-bt/kec_ws/src/sensor/gps/install/ntrip_client:/home/nuc-bt/kec_ws/src/rms/ktp_rms/ktp_dummy_data_generator/install/ktp_dummy_data_generator:/home/nuc-bt/kec_ws/src/rms/ktp_rms/ktp_interface/install/ktp_interface:/home/nuc-bt/kec_ws/src/rms/ktp_rms/ktp_task_controller/install/ktp_task_controller:/home/nuc-bt/kec_ws/src/rms/ktp_rms/ktp_data_manager/install/ktp_data_manager:/opt/ros/humble /usr/bin/cmake --build /home/nuc-bt/kec_ws/src/sensor/sensor_temp/build/sensor_temp -- -j8 -l8
+[3.923s] Invoking command in '/home/nuc-bt/kec_ws/src/sensor/sensor_temp/build/sensor_temp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nuc-bt/kec_ws/src/service/sound_player/install/sound_player:/home/nuc-bt/kec_ws/src/service/path_graph_data/install/path_storage:/home/nuc-bt/kec_ws/src/sensor/gps/install/ntrip_client:/home/nuc-bt/kec_ws/src/rms/ktp_rms/ktp_dummy_data_generator/install/ktp_dummy_data_generator:/home/nuc-bt/kec_ws/src/rms/ktp_rms/ktp_interface/install/ktp_interface:/home/nuc-bt/kec_ws/src/rms/ktp_rms/ktp_task_controller/install/ktp_task_controller:/home/nuc-bt/kec_ws/src/rms/ktp_rms/ktp_data_manager/install/ktp_data_manager:/opt/ros/humble /usr/bin/cmake --install /home/nuc-bt/kec_ws/src/sensor/sensor_temp/build/sensor_temp
+[3.930s] -- Install configuration: ""
+[3.930s] -- Execute custom install script
+[3.930s] -- Up-to-date symlink: /home/nuc-bt/kec_ws/src/sensor/sensor_temp/install/sensor_temp/lib/sensor_temp/sensor_temp_node
+[3.931s] -- Up-to-date symlink: /home/nuc-bt/kec_ws/src/sensor/sensor_temp/install/sensor_temp/share/sensor_temp/launch/__pycache__/obstacle_detection.launch.cpython-310.pyc
+[3.931s] -- Up-to-date symlink: /home/nuc-bt/kec_ws/src/sensor/sensor_temp/install/sensor_temp/share/sensor_temp/launch/sensor_temp.launch.py
+[3.931s] -- Up-to-date symlink: /home/nuc-bt/kec_ws/src/sensor/sensor_temp/install/sensor_temp/share/ament_index/resource_index/package_run_dependencies/sensor_temp
+[3.931s] -- Up-to-date symlink: /home/nuc-bt/kec_ws/src/sensor/sensor_temp/install/sensor_temp/share/ament_index/resource_index/parent_prefix_path/sensor_temp
+[3.932s] -- Up-to-date symlink: /home/nuc-bt/kec_ws/src/sensor/sensor_temp/install/sensor_temp/share/sensor_temp/environment/ament_prefix_path.sh
+[3.932s] -- Up-to-date symlink: /home/nuc-bt/kec_ws/src/sensor/sensor_temp/install/sensor_temp/share/sensor_temp/environment/ament_prefix_path.dsv
+[3.932s] -- Up-to-date symlink: /home/nuc-bt/kec_ws/src/sensor/sensor_temp/install/sensor_temp/share/sensor_temp/environment/path.sh
+[3.932s] -- Up-to-date symlink: /home/nuc-bt/kec_ws/src/sensor/sensor_temp/install/sensor_temp/share/sensor_temp/environment/path.dsv
+[3.932s] -- Up-to-date symlink: /home/nuc-bt/kec_ws/src/sensor/sensor_temp/install/sensor_temp/share/sensor_temp/local_setup.bash
+[3.932s] -- Up-to-date symlink: /home/nuc-bt/kec_ws/src/sensor/sensor_temp/install/sensor_temp/share/sensor_temp/local_setup.sh
+[3.933s] -- Up-to-date symlink: /home/nuc-bt/kec_ws/src/sensor/sensor_temp/install/sensor_temp/share/sensor_temp/local_setup.zsh
+[3.933s] -- Up-to-date symlink: /home/nuc-bt/kec_ws/src/sensor/sensor_temp/install/sensor_temp/share/sensor_temp/local_setup.dsv
+[3.933s] -- Symlinking: /home/nuc-bt/kec_ws/src/sensor/sensor_temp/install/sensor_temp/share/sensor_temp/package.dsv
+[3.940s] -- Up-to-date symlink: /home/nuc-bt/kec_ws/src/sensor/sensor_temp/install/sensor_temp/share/ament_index/resource_index/packages/sensor_temp
+[3.941s] -- Up-to-date symlink: /home/nuc-bt/kec_ws/src/sensor/sensor_temp/install/sensor_temp/share/sensor_temp/cmake/sensor_tempConfig.cmake
+[3.941s] -- Up-to-date symlink: /home/nuc-bt/kec_ws/src/sensor/sensor_temp/install/sensor_temp/share/sensor_temp/cmake/sensor_tempConfig-version.cmake
+[3.941s] -- Up-to-date symlink: /home/nuc-bt/kec_ws/src/sensor/sensor_temp/install/sensor_temp/share/sensor_temp/package.xml
+[3.942s] Invoked command in '/home/nuc-bt/kec_ws/src/sensor/sensor_temp/build/sensor_temp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nuc-bt/kec_ws/src/service/sound_player/install/sound_player:/home/nuc-bt/kec_ws/src/service/path_graph_data/install/path_storage:/home/nuc-bt/kec_ws/src/sensor/gps/install/ntrip_client:/home/nuc-bt/kec_ws/src/rms/ktp_rms/ktp_dummy_data_generator/install/ktp_dummy_data_generator:/home/nuc-bt/kec_ws/src/rms/ktp_rms/ktp_interface/install/ktp_interface:/home/nuc-bt/kec_ws/src/rms/ktp_rms/ktp_task_controller/install/ktp_task_controller:/home/nuc-bt/kec_ws/src/rms/ktp_rms/ktp_data_manager/install/ktp_data_manager:/opt/ros/humble /usr/bin/cmake --install /home/nuc-bt/kec_ws/src/sensor/sensor_temp/build/sensor_temp
